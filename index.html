@@ -9,12 +9,19 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
      <style>
+          html {
+               font-size: 62.5%;
+          }
+
           /* Styling heading */
           #heading {
                text-align: center;
-               text-shadow: 6px 6px 11px rgb(14, 31, 123);
-               font-size: 6vh;
+               text-shadow: .6rem .6rem 1.1rem rgb(14, 31, 123);
+               font-size: 4rem;
                color: hsl;
           }
 
@@ -24,51 +31,79 @@
 
           /* Style the image */
           #img {
-               display: inline-block;
-               width: 100%;
+               /* display: inline-block; */
+               /* width: 100%; */
           }
 
           #image {
-               display: inline-block;
-               width: 21%;
+               /* display: inline-block; */
+               width: 20%;
                display: block;
                margin-left: auto;
                margin-right: auto;
-               padding: 3px;
-               border-radius: 10px;
+               padding: .3rem;
+               border-radius: 1rem;
+          }
+
+          /* * {
+               box-sizing: border-box;
+          }
+
+          .imagediv {
+               display: inline-block;
+               width: 40.33%;
+               padding: 1rem;
+               margin-left: 2rem;
+          } */
+
+          p#box {
+               background-color: rgb(2, 0, 14);
+               padding: 1rem;
+               /* width: 20%; */
+               height: 24rem;
+               font-size: 3.9rem;
+               text-align: center;
+               color: white;
+               text-shadow: 0.5rem 0.5rem 1.5rem #a7ad9e;
+               border-radius: 1rem;
           }
 
           /* Style the image description */
           #caption {
-               font-size: 18px;
-               font-family: Gill Sans, 'Crimson Text', serif;
-               float: left;
-               margin-left: 277px;
-               padding: 13px;
+               font-size: 1.8rem;
+               font-family: 'Pacifico', cursive;
+               /* float: left; */
+               text-align: center;
+               margin-left: auto;
+               margin-right: auto;
+               padding: 1rem;
+               color: #111e60;
           }
 
           h1#apj-title {
                text-align: center;
-               font-size: 35px;
-               text-shadow: 6px 5px 11px black;
+               font-size: 3.5rem;
+               text-shadow: .6rem .5rem 1.1rem black;
                color: #111e60;
           }
 
           div#about-apj {
                font-family: Georgia;
                background-color: rgba(104, 43, 86, 0.25);
-               margin-left: 279px;
-               margin-top: 25px;
-               border-radius: 5px;
-               padding: 34px;
-               width: 60%;
+               margin-left: auto;
+               margin-right: auto;
+               border-radius: 1rem;
+               padding: 2.5rem;
+               width: 64%;
+               box-shadow: 16px 17px 18px #AEB0AE;
           }
 
           p#para {
-               padding: 5px;
-               margin: 11px;
+               padding: .5rem;
+               margin: 1.1rem;
                /* text-align: center; */
-               line-height: 31px;
+               line-height: 3rem;
+               font-size: 1.5rem;
           }
 
           a#tribute-link {
@@ -79,13 +114,27 @@
           }
 
           div#center {
-               margin: auto;
+               margin-left: auto;
+               margin-right: auto;
                width: 100%;
                /* padding: 10px; */
           }
 
           #lastpara {
                text-align: center;
+               font-size: 1.4rem;
+          }
+
+          @media (max-width:998px) {
+               html {
+                    font-size: 55%;
+               }
+          }
+
+          @media (max-width:768px) {
+               html {
+                    font-size: 45%;
+               }
           }
      </style>
 </head>
@@ -95,10 +144,19 @@
           <!-- Litle of the page -->
           <h1 id="heading">A.P.J. Abdul Kalam</h1>
           <div id="img">
-               <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/6/6e/A._P._J._Abdul_Kalam.jpg"
-                    alt="Error in Image Loading">
-               <small id="caption">Great Indian scientist and politician who played a leading role in the development of
-                    India’s missile and nuclear weapons programs.</small>
+               <div >
+                    <img  id="image" class="imagediv"
+                         src="https://edunewsnetwork.files.wordpress.com/2021/07/9c130f4a650c7f7c799a898d101c474c.jpg"
+                         alt="Error in Image Loading">
+               </div>
+               <!-- <div class="imagediv">
+                    <p id="box">If you want to shine like a sun, first burn like a sun.<br>"</p>
+               </div> -->
+
+               <p id="caption">Great Indian scientist and politician who played a leading role in the development
+                    of
+                    India’s missile and nuclear weapons programs.</p>
+
           </div>
           <div id="about-apj">
                <h1 id="apj-title">About The Title</h1>
